@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body style="background-color:#F7F3E9;">
+    <hr><h1 align="center">Finlatics Summer Internship</h1>
+    <hr><br>
+    <form>
+        <!--Text-->
+        <b>Enter Your Name : </b><input type="text" placeholder="Enter Here..."><br><br>
+        <!--Radio Button-->
+        <fieldset>
+            <legend><b>Gender : </b></legend>
+            <input type="radio" id="male" name="gender"><label for="male">Male</label>
+            <input type="radio" id="female" name="gender"><label for="female">Female</label>
+            <input type="radio" id="other" name="gender"><label for="other">Other</label>
+        </fieldset><br><br>
+        <!--Check Box-->
+        <fieldset>
+            <legend><b>Select Languages Known :</b></legend>
+        <input type="checkbox">Python<br>
+        <input type="checkbox">C<br>
+        <input type="checkbox">C++<br>
+        <input type="checkbox">Java<br>
+        <input type="checkbox">Html<br>
+        <input type="checkbox">CSS<br>
+        <input type="checkbox">Java Script<br>
+    </fieldset><br>
+        <!--Selection box-->
+        <label for="State"><b>Select Your State :</b></label><br>
+        <select id="State" size="3">
+            <option>Bihar</option>
+            <option>Assam</option>
+            <option>Delhi</option>
+            <option>Jharkhand</option>
+            <option>Haryana</option>
+            <option>Maharashtra</option>
+            <option>Tamil Nadu</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+            <option>Odisha</option>
+            <option>West Bengal</option>
+        </select><br><br>
+        <!--option box-->
+        <label for="Domain"><b>Interested Domain :</b></label>
+        <select id="Domain">
+            <option>Tecnhical</option>
+            <option>Design</option>
+            <option>Marketing</option>
+            <option>Management</option>
+            <option>Editing</option>
+        </select><br><br>
+        <!--text area-->
+        <label for="why"><b>Description :</b></label><br>
+        Tell uss in 200 words about how this Internship help you in future.<br>
+        <textarea id="why" rows="3" cols="50" placeholder="Enter your text.."></textarea><br><br>
+        <!--Datalist-->
+        <label for="branch"><b>Enter Your Branch :</b></label><br>
+        <input type="text" id="branch" list="branchlist">
+        <datalist id="branchlist">
+            <option>computer engineering</option>
+            <option>mechanical engineering</option>
+            <option>electrical engineering</option>
+            <option>civil engineering</option>
+            <option>iinformation technology</option>
+        </datalist><br><br>
+        <fieldset>
+            <legend><b>Personal Information :</b></legend>
+            Email : <input type="email"><br><br>
+            Phone No. : <input type="phone"><br>
+        </fieldset><br>
+        <input type="submit" value="Submit Form">
+    </form>
+</body>
+
+</html>
